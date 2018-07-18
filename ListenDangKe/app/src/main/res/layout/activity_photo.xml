@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context="com.example.lyg_pro.listendangke.PhotoActivity">
+    <LinearLayout
+        android:id="@+id/photoContent"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/top_bar_common_layout"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_below="@+id/photoContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearTop"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/upTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxEms="20"
+                android:imeOptions="actionNext"
+                android:background="#30eeeeee"
+                android:gravity="left|top"
+                android:textColorHint="#aaa"
+                android:hint="标题" />
+            <EditText
+                android:id="@+id/upcontent"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scrollbars="vertical"
+                android:layout_margin="8dp"
+                android:imeOptions="actionDone"
+                android:background="#30eeeeee"
+                android:gravity="left|top"
+                android:textColorHint="#aaa"
+                android:hint="说点什么吧..." >
+            </EditText>
+        </LinearLayout>
+        <com.yzs.imageshowpickerview.ImageShowPickerView
+            android:id="@+id/it_picker_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:max_num="9"
+            app:is_show_del="true" />
+    </LinearLayout>
+</RelativeLayout>

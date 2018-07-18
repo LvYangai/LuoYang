@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="130dp"
+            android:layout_height="90dp">
+            <ImageView
+                android:id="@+id/news_list_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:text="三大一实干犯得得到倒萨倒萨佛挡杀佛解放路凯撒上犯得上撒范德萨分法律的撒来发但是倒萨活动"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:id="@+id/frag_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/frag_list_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/frag_list_time"
+                    android:text="2018-04-20"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

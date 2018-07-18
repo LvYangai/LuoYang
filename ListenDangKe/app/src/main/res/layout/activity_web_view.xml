@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lyg_pro.listendangke.WebViewActivity">
+    <LinearLayout
+        android:id="@+id/webTop"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/top_bar_common_layout"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_above="@+id/webBottom"
+        android:orientation="vertical"
+        android:layout_below="@+id/webTop"
+        android:id="@+id/webContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/webBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/webInput"
+            android:hint="写评论"
+            android:textColorHint="#aaa"
+            android:textSize="22sp"
+            android:layout_width="0dp"
+            android:maxEms="120"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:textSize="15sp"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:background="@drawable/btn_back"
+            android:id="@+id/webSend"
+            android:text="发送"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

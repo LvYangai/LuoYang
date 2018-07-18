@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lyg_pro.listendangke.fragment.Fragment_News">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.cniao5.cwidgetutils.PullToRefreshListView
+        android:id="@+id/fragnews_listview"
+        android:cacheColorHint="@color/color_transparent"
+        android:divider="#eee"
+        android:dividerHeight="2dp"
+        android:scrollbars="vertical"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:scrollingCache="false"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+</LinearLayout>

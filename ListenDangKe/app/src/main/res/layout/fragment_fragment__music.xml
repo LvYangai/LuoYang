@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lyg_pro.listendangke.fragment.Fragment_Music">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.cniao5.cwidgetutils.PullToRefreshListView
+        android:id="@+id/frag_music_listview"
+        android:cacheColorHint="@color/color_transparent"
+        android:divider="#eee"
+        android:dividerHeight="2dp"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+    <tcking.github.com.giraffeplayer.IjkVideoView
+        android:id="@+id/ijkVideo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+    </tcking.github.com.giraffeplayer.IjkVideoView>
+</LinearLayout>

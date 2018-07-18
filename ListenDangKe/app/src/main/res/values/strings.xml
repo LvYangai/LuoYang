@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">洛阳镇党建</string>
+    <string name="title_home">看新闻</string>
+    <string name="title_dashboard">听党课</string>
+    <string name="title_notifications">音乐馆</string>
+    <string name="title_notifications2">拍拍秀</string>
+    <string name="home_news1">国内</string>
+    <string name="home_news2">镇上</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
